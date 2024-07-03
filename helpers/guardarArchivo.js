@@ -1,4 +1,4 @@
-const fs = require('fs')
+import * as fs from 'node:fs'
 
 // En la constante archivo indicamos el directorio donde vamos a crear nuestro json, la carpeta 'db' tiene que existir. Se lo pasaremos como argumento al fs.writeFileSync().
 
@@ -30,7 +30,4 @@ const leerDB = () => {
   return data
 }
 
-module.exports = {
-  guardarDB,
-  leerDB,
-}
+export { guardarDB, leerDB }
