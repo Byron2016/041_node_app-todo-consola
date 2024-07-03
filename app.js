@@ -1,18 +1,18 @@
 // La línea require('colors'); significa que estoy realizando la importación del paquete colors.
 
-require('colors')
+import colors from 'colors'
 
-const { guardarDB, leerDB } = require('./helpers/guardarArchivo')
-const {
+import { guardarDB, leerDB } from './helpers/guardarArchivo.js'
+import {
   inquirerMenu,
   pausa,
   leerInput,
   listadoTareasBorrar,
   confirmar,
   mostrarListadoChecklist,
-} = require('./helpers/inquirer')
+} from './helpers/inquirer.js'
 
-const Tareas = require('./models/tareas')
+import { Tareas } from './models/Tareas.js'
 
 const main = async () => {
   let opt = ''
