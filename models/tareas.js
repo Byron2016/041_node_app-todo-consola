@@ -1,4 +1,4 @@
-const Tarea = require('./tarea')
+import { Tarea } from './tarea.js'
 
 class Tareas {
   _listado = {
@@ -88,4 +88,4 @@ class Tareas {
   }
 }
 
-module.exports = Tareas
+export { Tareas }
