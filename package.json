@@ -2,10 +2,11 @@
   "name": "Consola Interactiva TO-DO app",
   "version": "2.0.0",
   "description": "Aplicación TO-DO realizada con node.js",
-  "main": "app.js",
+  "main": "src/app.js",
   "type": "module",
   "scripts": {
-    "start": "node app",
+    "dev": "nodemon src/app",
+    "start": "node src/app",
     "lint": "eslint .",
     "lintfix": "eslint --fix",
     "prett": "prettier . --check",
